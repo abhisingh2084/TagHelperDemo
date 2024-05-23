@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<a asp-controller="Home" asp-action="Contact" asp-route-id="1">Conatct Page 1</a>
+<br />
+<a href="@Url.Action("Contact", "Home")">Contact page 2</a>
+<br />
+@Html.ActionLink("Contact Page 3", "Conatct", "Home")
+<br />
+<a href="/Home/Contact">Contact page 4</a>
